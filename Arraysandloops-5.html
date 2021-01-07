@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //             Write a program to print items of the following array
+        // using for loop:
+        // fruits = [“apple”, “banana”, “mango”, “orange”,
+        // “strawberry”];
+        var fruits = ['apple', 'banana', 'mango', 'orange', 'strawberry'];
+        fruits.forEach(function (value) {
+            document.write(value + "<br>");
+        });
+        document.write("<br><br><br>")
+        fruits.forEach(function (value, index) {
+            document.write("Element at index " + index + ":" + value + "<br>");
+        });
+    </script>
+
+</body>
+
+</html>

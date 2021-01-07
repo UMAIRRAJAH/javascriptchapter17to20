@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+
+<body>
+      <script>
+            //             You have an array
+            // A = [“cake”, “apple pie”, “cookie”, “chips”, “patties”]
+            // Write a program to enable “search by user input” in an
+            // array.
+            // After searching, prompt the user whether the given item is
+            // found in the list or not. Example:
+
+            var A = ["cake", "apple pie", "cookie", "chips", "patties"];
+
+
+
+            var myFood = prompt("Welcome to RAJAH Bakery.What do you want to order sir/ma'am? ");
+            var matchFound = "no";
+
+            for (var i = 0; i < 1; i++) {
+                  if (myFood === A[0]) {
+                        document.write(" cake is <b>Available</b> at index 0  at our  bakery");
+                        matchFound = "yes";
+                  } else if (myFood === A[1]) {
+                        document.write(" apple pie is <b>Available</b> at index 1  at our  bakery");
+                        matchFound = "yes";
+                  } else if (myFood === A[2]) {
+                        document.write(" cookie is <b>Available</b> at index 2  at our bakery");
+                        matchFound = "yes";
+                  } else if (myFood === A[3]) {
+                        document.write(" chips is <b>Available</b> at index 3  at our bakery");
+                        matchFound = "yes";
+                  } else if (myFood === A[4]) {
+                        document.write(" patties is <b>Available</b> at index 4  at our bakery");
+                        matchFound = "yes";
+                  }
+
+            }
+
+            if (matchFound === "no") {
+                  document.write("We are Sorry," + myFood + " is not <b>Available </b> in our bakery!");
+            }
+
+      </script>
+</body>
+
+</html>
